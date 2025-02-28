@@ -1,16 +1,15 @@
 {
-  "version": 2,
   "builds": [
-    {
-      "src": "backend/server.js",
-      "use": "@vercel/node"
-    },
     {
       "src": "fronted/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "fronted/build"
+        "distDir": "fronted/dist"
       }
+    },
+    {
+      "src": "backend/server.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
