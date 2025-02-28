@@ -5,7 +5,7 @@
             "src": "fronted/package.json",
             "use": "@vercel/static-build",
             "config": {
-                "distDir": "fronted/dist",
+                "distDir": "dist",
                 "buildCommand": "cd fronted && npm install && npm run build"
             }
         },
